@@ -1,14 +1,17 @@
 body{
     position: relative;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     margin: 0;
+    
 }
 
 #secciones, .navbar{
     background-color: #0a192f;
     width: 100%;
+
 }
+
 .navbar-brand, .imgnav {
     background-color: #44af9d !important;
     border-radius: 20% !important;
@@ -43,11 +46,7 @@ h6, p{
     margin-right: 10%;
     margin-top: 2%;
 }
-/*
-.intro>p{
-    background-color: #369384;
-    color: #ffffff;
-}*/
+
 
 .linkcard{
     color: #4cc1aa !important;
@@ -58,15 +57,27 @@ h6, p{
     width: 30vmin;
     background-color: #44af9d;
     border-radius: 50%;
+    /*box-shadow: 0 0 40px 20px #44af9d;*/
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+    /*box-shadow:
+    inset 0 0 50px #fff,      /* inner white *
+    inset 20px 0 80px #44af9d,   /* inner left magenta short *
+    inset -20px 0 80px #0ff,  /* inner right cyan short *
+    inset 20px 0 300px #44af9d,  /* inner left magenta broad *
+    inset -20px 0 300px #0ff, /* inner right cyan broad *
+    0 0 50px #fff,            /* outer white *
+    -10px 0 80px #44af9d,        /* outer left magenta *
+    10px 0 80px #0ff;         /* outer right cyan *
+    */
 }
 
 .contacto{
     height: 60vh;
-    width: 100vw;
 }
 
-.presentacion, .proyectos {
-    width: 100vw;
+.presentacion, .proyectos, .contacto {
+    width: 100%;
 }
 
 
@@ -90,12 +101,13 @@ i{
 
     .presentacion, .proyectos, .contacto{
         height: 100vh;
-        width: 100vw;
+        width: 100%;
     }
     
     .logo{
-        height: 20vmin;
-        width: 20vmin;
+        height: 30vmin;
+        width: 30vmin;
+        
     }
 
     i{
