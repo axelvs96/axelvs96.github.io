@@ -1,33 +1,98 @@
 body{
     position: relative;
     height: 100%;
-}
-
-
-.logo{
-    height: 30vmin;
-    width: 30vmin;
-    background-color: #82b3eb;
-    border-radius: 50%;
-}
-
-.presentacion, .proyectos, .contacto{
-    height: 100vh;
     width: 100vw;
+    margin: 0;
+}
+
+#secciones, .navbar{
+    background-color: #0a192f;
+    width: 100%;
+}
+.navbar-brand, .imgnav {
+    background-color: #44af9d !important;
+    border-radius: 20% !important;
+    height: 10vmin !important;
+    width: 11vmin !important;
+}
+
+
+.nav-link.active{
+    background-color: #44af9d !important;
+}
+
+
+.nav-link{
+    color: #ffffff !important;
+}
+
+h1, h2, h4, h5{
+    color: #ccd6f6;
+}
+
+h6, p{
+    color: #a0b1cd;
 }
 
 .card{
+    background-color: transparent !important;
+    border-style: solid !important;
+    border-color: #4cc1aa !important;
+    border-width: 0.6vmin !important;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
 }
+/*
+.intro>p{
+    background-color: #369384;
+    color: #ffffff;
+}*/
+
+.linkcard{
+    color: #4cc1aa !important;
+}
+
+.logo{
+    height: 30vmin;
+    width: 30vmin;
+    background-color: #44af9d;
+    border-radius: 50%;
+}
+
+.contacto{
+    height: 60vh;
+    width: 100vw;
+}
+
+.presentacion, .proyectos {
+    width: 100vw;
+}
+
 
 i{
     font-size: 10vmin;
-    color: #3387e7;
+    color: #4cc1aa;
 }
 
+.navbar-toggler{
+    background-color: #44af9d !important;
+}
+
+
 @media (min-width: 992px) {
+    .navbar-brand, .imgnav {
+        background-color: #44af9d !important;
+        border-radius: 20% !important;
+        height: 6vmin !important;
+        width: 6vmin !important;
+    }
+
+    .presentacion, .proyectos, .contacto{
+        height: 100vh;
+        width: 100vw;
+    }
+    
     .logo{
         height: 20vmin;
         width: 20vmin;
@@ -36,5 +101,9 @@ i{
     i{
         font-size: 5vmin;
 
+    }
+
+    #secciones, .navbar{
+        background-color: #0a192f;
     }
  }

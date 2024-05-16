@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,18 +18,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/de9679b211.js" crossorigin="anonymous"></script>
     </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <body class="p-0" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
         <!-- Barra de navegacion -->
-        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-white p-0 fixed-top">
+        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light p-0 fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand p-0" href="#"><img src="/images/logoA.PNG" alt=""  height="50" class="d-inline-block align-text-top p-0"/></a>
+                <a class="navbar-brand p-0" href="#"><img class="imgnav" src="/images/logoA.PNG" alt=""  height="50" class="d-inline-block align-text-top p-0"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#aboutme">Axel Valverde</a>
+                            <a class="nav-link" href="#aboutme">Sobre mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Proyectos</a>
@@ -41,10 +41,10 @@
                 </div>
             </div>
         </nav>
-        <div id="secciones" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div id="secciones" data-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example p-0 mr-0" tabindex="0">
             <!-- Distintos apartados -->
                 <!-- Sobre mi / presentacion -->
-                <div id="aboutme" class="container-fluid p-0 pt-5 mt-1 presentacion">
+                <div id="aboutme" class="container-fluid p-0 pt-5 mt-2 presentacion">
                     <div class="row mt-4">
                         <div class="col-xl"></div>
                         <div class="col-xl">
@@ -57,20 +57,31 @@
                     <div class="row">
                         <div class="col-xl"></div>
                         <div class="col-xl text-center">
-                            <h2>Hola! Soy Axel Valverde</h2>  
-                            <h3></h3>
+                            <h1>Axel Valverde</h1>  
+                        </div>
+                        <div class="col-xl"></div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-xl"></div>
+                        <div class="col-xl-6 text-justify">
+                            <div class="intro p-5">
+                                <p class="p-2">Técnico superior en Desarrollo de Aplicaciones Multiplataforma y programador con más de 6 años de experiencia en entorno logístico.
+                                    <br>He trabajado en proyectos a nivel global, colaborando con equipos internacionales, así como en proyectos internos de la empresa en la que trabajo, donde me encargo de corregir las incidencias que surjan y modificar según necesidades los distintos módulos que conforman el ERP, así como crear nuevos módulos para la incorporación de nuevas operativas.</p>
+                            </div>
+                            <!--p>PL/SQL · C# · PHP · HTML · CSS · JAVA</p-->
                         </div>
                         <div class="col-xl"></div>
                     </div>
                 </div>
 
                 <!-- proyectos -->
-                <div id="projects" class="container p-0 pt-5 proyectos">
+                <div id="projects" class="container p-0 pt-5 mt-2 proyectos">
+                    <h4 class="text-center">PROYECTOS</h4>
                     <div class="row mt-4">
                         <div class="col-xl">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="https://github.com/axelvs96/TransferFTP" target="_blank">Cliente SFTP</a></h5>
+                                    <h5 class="card-title"><a class="linkcard" href="https://github.com/axelvs96/TransferFTP" target="_blank">Cliente SFTP</a></h5>
                                     <p class="card-text">Programa en C# para subir y descargar ficheros de un FTP/sFTP. Se utiliza un csv de configuración con las conexiones.</p>
                                 </div>
                             </div>
@@ -78,57 +89,65 @@
                         <div class="col-xl">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="https://github.com/axelvs96/Ajedrez" target="_blank">Ajedrez</a></h5>
+                                    <h5 class="card-title"><a class="linkcard" href="https://github.com/axelvs96/Ajedrez" target="_blank">Ajedrez</a></h5>
                                     <p class="card-text">Aplicación de terminal hecho en Java en el grado de DAM.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mt-1">
                         <div class="col-xl">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="https://github.com/axelvs96/Mazeball" target="_blank">Mazeball</a></h5>
+                                    <h5 class="card-title"><a class="linkcard" href="https://github.com/axelvs96/Mazeball" target="_blank">Mazeball</a></h5>
                                     <p class="card-text">Juego para Android realizado en Java. Utiliza el giroscopio del móvil para mover la bola a través del laberinto.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl"></div>
                     </div>
                 </div>
                 
                 <!-- contacto -->
-                <div id="contact" class="container p-0 pt-5 contacto">
+                <div id="contact" class="container p-0 pt-5 mt-5 contacto">
+                    <h4 class="text-center">CONTACTO</h4>
                     <div class="row mt-4">
-                        <div class="col-xl">
-                            <div class="text-end">
-                                <a href="https://www.linkedin.com/in/avalverdesanchis"><i class="fa-brands fa-linkedin"></i></a>
+                        <div class="col"></div>
+                        <div class="col">
+                            <div class="text-center">
+                                <a href="https://www.linkedin.com/in/avalverdesanchis" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
-                        <div class="col-xl">
+                        <div class="col">
                             <div class="text-center">
                                 <a href="mailto:axelvs96@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                             </div>
                         </div>
-                        <div class="col-xl">
-                            <div class="text-left">
+                        <div class="col">
+                            <div class="text-center">
                                 <a href="AxelValverde.pdf" download=""><i class="fa-solid fa-file-pdf"></i></a>
                             </div>
                         </div>
+                        <div class="col"></div>
                     </div>
                     <div class="row mt-0">
-                        <div class="col-xl">
-                            <div class="text-end">
-                                LinkedIn
-                            </div>
-                        </div>
-                        <div class="col-xl">
+                        <div class="col"></div>
+                        <div class="col">
                             <div class="text-center">
-                                Mail
+                                <p>LinkedIn</p>
                             </div>
                         </div>
-                        <div class="col-xl">
-                            <div class="text-left">
-                                Descarga mi CV
+                        <div class="col">
+                            <div class="text-center">
+                                <p>Mail</p>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="text-center">
+                                <p>Descarga mi CV</p>
+                            </div>
+                        </div>
+                        <div class="col"></div>
                     </div>
                 </div>
 
