@@ -22,7 +22,7 @@ body{
 
 
 .navbar-brand, .imgnav {
-    /*background-color: var(--marco) !important;*/
+    background-color: var(--marco) !important;
     border-radius: 20% !important;
     height: 10vmin !important;
     width: 11vmin !important;
@@ -68,7 +68,7 @@ p  /* texto, descripcion proyectos y enlaces contacto*/
 .logo{
     height: 30vmin;
     width: 30vmin;
-    background-color: var(--marco);
+    /*background-color: var(--marco);*/
     border-radius: 50%;
     /*box-shadow: 0 0 40px 20px #44af9d;*/
   /* in order: x offset, y offset, blur size, spread size, color */
