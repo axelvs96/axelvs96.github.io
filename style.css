@@ -22,7 +22,7 @@ body{
 
 
 .navbar-brand, .imgnav {
-    background-color: var(--marco) !important;
+    /*background-color: var(--marco) !important;*/
     border-radius: 20% !important;
     height: 10vmin !important;
     width: 11vmin !important;
