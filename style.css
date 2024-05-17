@@ -1,19 +1,28 @@
+:root{
+
+    --fondo: #0B0C10;
+    --fondo2: #1F2833;
+    --titulo: #66FCF1;
+    --texto: #C5C6C7;
+    --marco: #45A29E;
+}
+
 body{
     position: relative;
     height: 100%;
-    width: 100%;
-    margin: 0;
-    
+    background-color: var(--fondo2) !important;
+    font-family: 'Courier New', monospace !important;
 }
 
 #secciones, .navbar{
-    background-color: #0a192f;
     width: 100%;
-
+    background-color: var(--fondo2) !important;
 }
 
+
+
 .navbar-brand, .imgnav {
-    background-color: #44af9d !important;
+    background-color: var(--marco) !important;
     border-radius: 20% !important;
     height: 10vmin !important;
     width: 11vmin !important;
@@ -21,26 +30,30 @@ body{
 
 
 .nav-link.active{
-    background-color: #44af9d !important;
+    background-color: var(--marco) !important;
+    color: var(--fondo) !important;
 }
 
 
 .nav-link{
-    color: #ffffff !important;
+    color: var(--texto) !important;
 }
 
-h1, h2, h4, h5{
-    color: #ccd6f6;
+h1, /* nombre */
+h2, 
+h4, /* titulo secciones */
+h5, /* titulo/enlace proyectos */
+h6, /* titulo skills */
+p  /* texto, descripcion proyectos y enlaces contacto*/
+{
+    color: var(--texto);
 }
 
-h6, p{
-    color: #a0b1cd;
-}
 
 .card{
     background-color: transparent !important;
     border-style: solid !important;
-    border-color: #4cc1aa !important;
+    border-color: var(--marco) !important;
     border-width: 0.6vmin !important;
     margin-left: 10%;
     margin-right: 10%;
@@ -49,13 +62,13 @@ h6, p{
 
 
 .linkcard{
-    color: #4cc1aa !important;
+    color: var(--marco) !important;
 }
 
 .logo{
     height: 30vmin;
     width: 30vmin;
-    background-color: #44af9d;
+    background-color: var(--marco);
     border-radius: 50%;
     /*box-shadow: 0 0 40px 20px #44af9d;*/
   /* in order: x offset, y offset, blur size, spread size, color */
@@ -74,26 +87,27 @@ h6, p{
 
 .contacto{
     height: 60vh;
+    padding-top: 10rem !important;
 }
 
-.presentacion, .proyectos, .contacto {
-    width: 100%;
+.presentacion, .proyectos {
+    width: 90%;
+    padding-top: 5rem !important;
 }
-
 
 i{
     font-size: 10vmin;
-    color: #4cc1aa;
+    color: var(--marco);
 }
 
 .navbar-toggler{
-    background-color: #44af9d !important;
+    background-color: var(--marco) !important;
 }
 
 
 @media (min-width: 992px) {
     .navbar-brand, .imgnav {
-        background-color: #44af9d !important;
+        background-color: var(--marco) !important;
         border-radius: 20% !important;
         height: 6vmin !important;
         width: 6vmin !important;
@@ -101,7 +115,7 @@ i{
 
     .presentacion, .proyectos, .contacto{
         height: 100vh;
-        width: 100%;
+        padding-top: 5rem !important;
     }
     
     .logo{
@@ -115,7 +129,4 @@ i{
 
     }
 
-    #secciones, .navbar{
-        background-color: #0a192f;
-    }
  }
