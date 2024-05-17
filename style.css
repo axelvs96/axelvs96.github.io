@@ -65,10 +65,9 @@ p  /* texto, descripcion proyectos y enlaces contacto*/
     color: var(--marco) !important;
 }
 
-.logo{
-    height: 30vmin;
-    width: 30vmin;
-    /*background-color: var(--marco);*/
+.foto{
+    height: 50vmin;
+    width: 50vmin;
     border-radius: 50%;
     /*box-shadow: 0 0 40px 20px #44af9d;*/
   /* in order: x offset, y offset, blur size, spread size, color */
@@ -100,6 +99,10 @@ i{
     color: var(--marco);
 }
 
+.fa-location-dot{
+    font-size: 3vmin;
+}
+
 .navbar-toggler{
     background-color: var(--marco) !important;
 }
@@ -118,9 +121,9 @@ i{
         padding-top: 5rem !important;
     }
     
-    .logo{
-        height: 30vmin;
-        width: 30vmin;
+    .foto{
+        height: 35vmin;
+        width: 35vmin;
         
     }
 
