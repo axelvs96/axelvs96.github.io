@@ -67,6 +67,7 @@ p  /* texto, descripcion proyectos y enlaces contacto*/
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
+    height: 22vh !important;
 }
 
 mark{
@@ -117,8 +118,13 @@ i{
         width: 6vmin !important;
     }
 
-    .presentacion, .proyectos, .contacto{
+    .presentacion, .proyectos{
         height: 100vh;
+        padding-top: 3rem !important;
+    }
+
+    .contacto{
+        height: 60vh;
         padding-top: 3rem !important;
     }
     
@@ -132,7 +138,7 @@ i{
         font-size: 5vmin;
 
     }
-
+    
     .minombre>*{
         padding-right: 1.5rem * .5 !important;
     }
