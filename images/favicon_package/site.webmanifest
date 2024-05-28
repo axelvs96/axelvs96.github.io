@@ -1,6 +1,6 @@
 {
-    "name": "axelvs96",
-    "short_name": "axelvs96",
+    "name": "axelvs",
+    "short_name": "axelvs",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +15,5 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "https://axelvs96.github.io/"
+    "display": "standalone"
 }
