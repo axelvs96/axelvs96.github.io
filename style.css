@@ -1,13 +1,13 @@
 :root{
 
     --fondo: #0B0C10;
-    --fondo2: #1F2833;
+    --fondo2: #1e1e1e;
     --titulo: #66FCF1;
-    --texto: #C5C6C7;
-    --marco: #45A29E;
+    --texto: #ecf0f1;
+    --marco: #3498db;
 }
 
-body::-webkit-scrollbar {
+div::-webkit-scrollbar {
     display: none;
   }
   
@@ -18,28 +18,42 @@ body{
     font-family: 'Courier New', monospace !important;
 }
 
+
 .minombre>*{
-    padding-right: 0 !important;
+    padding-right: 1.5rem * .5 !important;
 }
+
 
 #secciones, .navbar{
     width: 100%;
     background-color: var(--fondo2) !important;
 }
 
-
+.navbar {
+    height: 7vh !important;
+}
 
 .navbar-brand, .imgnav {
     background-color: var(--marco) !important;
     border-radius: 20% !important;
-    height: 10vmin !important;
-    width: 11vmin !important;
+    height: 6vmin !important;
+    width: 6vmin !important;
 }
 
+.foto{
+    height: 45vmin;
+    width: 45vmin;
+    
+}
+
+i{
+    font-size: 5vmin;
+    color: var(--marco);
+}
 
 .nav-link.active{
     background-color: var(--marco) !important;
-    color: var(--fondo) !important;
+    color: var(--texto) !important;
 }
 
 
@@ -66,8 +80,8 @@ p  /* texto, descripcion proyectos y enlaces contacto*/
     border-width: 0.6vmin !important;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 2%;
-    height: 22vh !important;
+    margin-top: 5vh;
+    height: 25vh !important;
 }
 
 mark{
@@ -79,27 +93,87 @@ mark{
     color: var(--marco) !important;
 }
 
-.foto{
-    height: 55vmin;
-    width: 55vmin;
-    border-radius: 50%;
-}
 
 
 .contacto{
-    height: 60vh;
-    padding-top: 7rem !important;
+    height: 100vh;
+    padding-top: 10vh !important;
 }
 
-.presentacion, .proyectos {
-    width: 90%;
-    padding-top: 5rem !important;
+
+
+.presentacion, .proyectos{
+    height: 100vh;
+    padding-top: 10vh !important;
 }
 
-i{
-    font-size: 10vmin;
-    color: var(--marco);
-}
+
+
+
+
+
+.copy-button {
+        
+    top: 50%;
+    transform: translateX(10%);
+    left: calc(50% - 20px);
+    width: 3vmin !important;
+    height: 3vmin !important;
+    background-color: var(--fondo2);
+    border: none;
+outline:none;
+    
+    
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      z-index: 9998;
+      top: 35px;
+      left: 15px;
+      width: 0;
+      height: 0;
+      
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid rgba(0,0,0,.72);
+    }
+  
+    &:after {
+      content: 'Copiar mail';
+      display: none;
+      position: absolute;
+      z-index: 9999;
+      top: 40px;
+      left: -37px;
+      width: 114px;
+      height: 36px;
+  
+      color: #fff;
+      font-size: 10px;
+      line-height: 36px;
+      text-align: center;
+  
+      background: rgba(0,0,0,.72);
+      border-radius: 3px;
+    }
+    
+    &:hover {
+      
+      
+      &:before, &:after {
+        display: block;
+      }
+    }
+    
+    &:active, &:focus {
+      outline: none;
+      
+      &:after {
+        content: 'Copiado!';
+      }
+    }
+  }
 
 .fa-location-dot{
     font-size: 3vmin;
@@ -109,38 +183,73 @@ i{
     background-color: var(--marco) !important;
 }
 
+#copybutton{
+    font-size: 3vh !important;
+}
 
-@media (min-width: 992px) {
+
+
+
+@media (max-width: 991.98px) {
+
+
     .navbar-brand, .imgnav {
         background-color: var(--marco) !important;
-        border-radius: 20% !important;
-        height: 6vmin !important;
-        width: 6vmin !important;
+        border-radius: 30% !important;
+        padding: 5% !important;
+        height: 7vh !important;
+        width: 7vh !important;
     }
 
-    .presentacion, .proyectos{
-        height: 100vh;
-        padding-top: 3rem !important;
+    .nav{
+        margin-left: 50vw;
+        flex-direction: column !important;
+        align-content: flex-end !important;
+        background-color: transparent;
     }
+
+    .nav-item{
+        background-color: var(--fondo2) !important;
+    }
+
+
+    .presentacion, .proyectos {
+        width: 90%;
+        padding-top: 5rem !important;
+        height: 100% !important;
+    }
+
+
 
     .contacto{
         height: 60vh;
-        padding-top: 3rem !important;
+        padding-top: 7rem !important;
     }
     
+    .contacto>col{
+        width: 100vw !important;
+    }
+
     .foto{
-        height: 45vmin;
-        width: 45vmin;
-        
+        height: 55vmin;
+        width: 55vmin;
+        border-radius: 50%;
     }
 
     i{
-        font-size: 5vmin;
+        font-size: 10vmin;
+        color: var(--marco);
+    }
 
+
+    .minombre>*{
+        padding-right: 0 !important;
     }
     
-    .minombre>*{
-        padding-right: 1.5rem * .5 !important;
+    
+    #copybutton{
+        font-size: 3vh !important;
     }
+
 
  }
